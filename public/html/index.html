@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/site.css">
+    <script type="text/javascript" src="../js/index.js"></script>
+    <title>ToDo SPA</title>
+</head>
+<body onload="setFooterCurrentDate()">
+    <header>
+        <section>
+            <h1>Tasks</h1>
+        </section>
+        <section>
+            <p>Total: <span id="total">0</span></p>
+        </section>
+        <section id="results">
+            <p>Not finished: <span id="ongoing-stats">0</span></p>
+            <p>Finished: <span id="finished-stats">0</span></p>
+        </section>
+    </header>
+    <main>
+        <section>
+            <div>
+                <ul id="todo"></ul>
+            </div>
+            <div>
+                <ul id="finished-tasks"></ul>
+            </div>
+        </section>
+        <section>
+            <form id="assignment-form">
+                <input type="text" id="input" oninput="hideValidationSpan()" placeholder="Task" required/>
+                <span id="validation">Submitting empty form is not allowed.</span>
+                <input type="submit" id="submit-button"  onclick="addAssignment(event)" value="Add"></input>
+                <button type="button" id="reset-button" onclick="resetTasks()">Reset tasks</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <p>Copyright &copy; 2023 - </p>
+        </section>
+    </footer>
+</body>
+</html>

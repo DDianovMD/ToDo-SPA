@@ -1,0 +1,111 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 95vh;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 70%;
+    margin-left: 15%;
+}
+
+#results {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+header > section:nth-child(1) {
+    align-self: center;
+}
+
+header > section:nth-child(2) {
+    font-size: 18px;
+    font-style: italic;
+    background-color: dodgerblue;
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+    border-radius: 13px 13px 0px 0px;
+}
+
+header > section:nth-child(3) {
+    background-color: moccasin;
+    border-radius: 0px 0px 13px 13px;
+}
+
+main > section:nth-child(1) {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 50px;
+}
+
+main > section:nth-child(1) > div:nth-child(1) {
+    background-color: red;
+    border-radius: 13px;
+    padding: 20px;
+    width: 100%;
+    margin-right: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+main > section:nth-child(1) > div:nth-child(2) {
+    background-color: lawngreen;
+    border-radius: 13px;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+li {
+    margin-left: -40px;
+}
+
+.checkbox {
+    margin-left: 30px;
+    margin-right: 2px;
+}
+
+#assignment-form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 30%;
+}
+
+#validation {
+    display: none;
+    align-self: center;
+    color: red;
+}
+
+#submit-button, #reset-button {
+    margin-top: 15px;
+    width: fit-content;
+    align-self: center;
+}
+
+#input {
+    width: 150px;
+    align-self: center;
+}
